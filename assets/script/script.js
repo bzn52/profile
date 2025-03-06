@@ -38,64 +38,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-const popup = document.getElementById('popup');
-
-contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    // Show loading state
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalBtnText = submitBtn.innerHTML;
-    submitBtn.innerHTML = 'Sending... <span class="loading"></span>';
-    
-    // Prepare form data
-    const formData = new FormData(contactForm);
-    const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        subject: formData.get('subject'),
-        message: formData.get('message')
-    };
-
-    try {
-        // Send to FormSubmit
-        const response = await fetch('https://formsubmit.co/bizenofficial7@gmail.com', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
-
-        if (response.ok) {
-            // Show success popup
-            popup.classList.add('active');
-            contactForm.reset();
-        } else {
-            throw new Error('Failed to send message');
-        }
-    } catch (error) {
-        alert('Sorry, there was an error sending your message. Please try again.');
-    } finally {
-        // Restore button state
-        submitBtn.innerHTML = originalBtnText;
-    }
-});
-
-// Close popup when clicking the OK button
-document.querySelector('.popup-close').addEventListener('click', () => {
-    popup.classList.remove('active');
-});
-
-// Close popup when clicking outside
-popup.addEventListener('click', (e) => {
-    if (e.target === popup) {
-        popup.classList.remove('active');
-    }
-});
+// Form submission handling
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Add your form submission logic here
+        alert('Thank you for your message! I will get back to you soon.');
+        this.reset();
+    });
+}
 
 // Reveal animations on scroll
 const revealElements = document.querySelectorAll('.skill-box, .edu-box, .project-box');

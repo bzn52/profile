@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Bizen | Profile</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/imgs/z.png" type="image/icon type">
 
     <!--    Font Awesome    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
-        <a href="#home" class="logo">ZEN</a>
-
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         
         <nav class="navbar" id="navbar">
@@ -23,31 +22,62 @@
             <a href="#call">Contact</a>
         </nav>
     </header>
-
     <section id="home" class="home">
+        <div class="home-bg"></div>
         <div class="home-content">
-            <h1>Hi, It's <span>Bizen</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Passionate software developer with a keen interest in creating innovative solutions. 
-               Specialized in web development and committed to writing clean, efficient code that solves real-world problems.</p>
-
-            <div class="social-icon">
-                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <div class="text-animate">
+                <h3 class="subtitle">Hello, I'm</h3>
+                <h1 class="title">Bizen Shrestha</h1>
+                <div class="profession">
+                    <span class="profession-name">Web Developer</span>
+                </div>
             </div>
             
-            <div class="cta-buttons">
-                <a href="#call" class="btn">Hire Me</a>
-                <a href="assets/resume.pdf" class="btn" download>Download CV</a>
+            <p class="description">Passionate about creating innovative digital solutions and 
+            transforming ideas into reality through clean, efficient code.</p>
+
+            <div class="cta-container">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com" target="_blank" class="social-btn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/bzn52" target="_blank" class="social-btn">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-btn">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/meoww.zen" target="_blank" class="social-btn">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                
+                <div class="action-btns">
+                    <a href="#call" class="primary-btn">
+                        Contact Me
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                    <a href="assets/resume.pdf" class="secondary-btn" download>
+                        Download CV
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
             </div>
         </div>
+
         <div class="home-img">
-            <img src="assets/imgs/pfp.jpg" alt="profile">
+            <div class="img-box">
+                <img src="assets/imgs/pfp.jpg" alt="profile">
+                <div class="img-bg"></div>
+            </div>
+            <div class="tech-stack">
+                <span class="tech-item"><i class="fa-brands fa-html5"></i></span>
+                <span class="tech-item"><i class="fa-brands fa-css3-alt"></i></span>
+                <span class="tech-item"><i class="fa-brands fa-js"></i></span>
+                <span class="tech-item"><i class="fa-brands fa-react"></i></span>
+            </div>
         </div>
     </section>
-
     <section id="skill" class="skill">
         <h2 class="heading">My <span>Skills</span></h2>
         <div class="skill-container">
@@ -94,10 +124,22 @@
                 <img src="assets/imgs/pr1.PNG" alt="project">
                 <div class="project-info">
                     <h3>Snake Game</h3>
-                    <p>Brief project description goes here</p>
+                    <p>A simple snake game built with HTML, CSS, and JavaScript.</p>
                     <div class="project-links">
                         <a href="https://github.com/bzn52/Snake-game" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://snake-game-2om.pages.dev/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="assets/imgs/pr2.PNG" alt="project">
+                <div class="project-info">
+                    <h3>Weather Site</h3>
+                    <p>A weather site built to learn API. It uses OpenWeatherMap API to fetch weather data.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/bzn52/weather-site" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://weather-site-514.pages.dev/" target="_blank"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -108,7 +150,16 @@
 
     <section class="call" id="call">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form id="contactForm" class="contact-form">
+        <form action="https://formsubmit.co/bizenstha07@gmail.com@gmail.com" method="POST" class="contact-form">
+            <!-- Honeypot to prevent spam -->
+            <input type="text" name="_honey" style="display: none;">
+            
+            <!-- Disable captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <!-- Redirect after submission -->
+            <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+            
             <div class="input-box">
                 <input type="text" name="name" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email Address" required>
@@ -120,15 +171,6 @@
             <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
         </form>
     </section>
-
-    <div class="popup" id="popup">
-        <div class="popup-content">
-            <i class="fa-solid fa-circle-check"></i>
-            <h2>Thank You!</h2>
-            <p>Your message has been sent successfully.</p>
-            <button class="btn popup-close">OK</button>
-        </div>
-    </div>
 
     <footer class="footer">
         <div class="footer-text">
