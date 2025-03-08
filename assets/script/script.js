@@ -38,16 +38,63 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission handling
+// Get form and popup elements
 const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        // Add your form submission logic here
-        alert('Thank you for your message! I will get back to you soon.');
-        this.reset();
+const thankYouPopup = document.getElementById('thankYouPopup');
+const loadingPopup = document.getElementById('loadingPopup');
+const popupCloseBtn = document.querySelector('.popup-close');
+const submitBtn = contactForm.querySelector('.btn');
+
+// Handle form submission
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+    
+    // Show loading state
+    loadingPopup.classList.add('active');
+    contactForm.classList.add('loading');
+    submitBtn.classList.add('loading');
+    
+    // Get form data
+    const formData = new FormData(this);
+    
+    // Send form data to FormSubmit
+    fetch(this.action, {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => {
+        // Hide loading popup
+        loadingPopup.classList.remove('active');
+        contactForm.classList.remove('loading');
+        submitBtn.classList.remove('loading');
+        
+        // Show success popup
+        thankYouPopup.classList.add('active');
+        // Reset form
+        contactForm.reset();
+    })
+    .catch(error => {
+        // Hide loading popup
+        loadingPopup.classList.remove('active');
+        contactForm.classList.remove('loading');
+        submitBtn.classList.remove('loading');
+        
+        console.error('Error:', error);
+        // You could add error handling here
     });
-}
+});
+
+// Close popup when close button is clicked
+popupCloseBtn.addEventListener('click', () => {
+    thankYouPopup.classList.remove('active');
+});
+
+// Close popup when clicking outside
+thankYouPopup.addEventListener('click', (e) => {
+    if (e.target === thankYouPopup) {
+        thankYouPopup.classList.remove('active');
+    }
+});
 
 // Reveal animations on scroll
 const revealElements = document.querySelectorAll('.skill-box, .edu-box, .project-box');

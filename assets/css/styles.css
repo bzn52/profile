@@ -683,3 +683,154 @@ section {
         padding-top: 10rem;
     }
 }
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.popup.active {
+    display: flex;
+}
+
+.popup-content {
+    background: var(--second-bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    border: 2px solid var(--main-color);
+    animation: popupIn 0.3s ease-out;
+}
+
+.popup-content i {
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.popup-content h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.popup-content p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.popup-close {
+    background: var(--main-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.popup-close:hover {
+    transform: scale(1.05);
+}
+
+@keyframes popupIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading Animation Styles */
+.loading-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.loading-popup.active {
+    display: flex;
+}
+
+.loading-content {
+    background: var(--second-bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.loading-content p {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--second-bg-color);
+    border-top: 5px solid var(--main-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Disable form while loading */
+.contact-form.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Update submit button styles */
+.contact-form .btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form .btn.loading {
+    color: transparent;
+}
+
+.contact-form .btn.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid transparent;
+    border-top: 3px solid var(--text-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

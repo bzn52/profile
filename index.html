@@ -150,15 +150,9 @@
 
     <section class="call" id="call">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="https://formsubmit.co/bizenstha07@gmail.com@gmail.com" method="POST" class="contact-form">
-            <!-- Honeypot to prevent spam -->
+        <form action="https://formsubmit.co/bizenofficial7@gmail.com" method="POST" class="contact-form">
             <input type="text" name="_honey" style="display: none;">
-            
-            <!-- Disable captcha -->
             <input type="hidden" name="_captcha" value="false">
-            
-            <!-- Redirect after submission -->
-            <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
             
             <div class="input-box">
                 <input type="text" name="name" placeholder="Full Name" required>
@@ -177,6 +171,22 @@
             <p>Copyright &copy; 2024 by Bizen | All Rights Reserved</p>
         </div>
     </footer>
+
+    <div class="popup" id="thankYouPopup">
+        <div class="popup-content">
+            <i class="fas fa-check-circle"></i>
+            <h2>Thank You!</h2>
+            <p>Your message has been sent successfully.</p>
+            <button class="btn popup-close">Close</button>
+        </div>
+    </div>
+
+    <div class="loading-popup" id="loadingPopup">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Sending message...</p>
+        </div>
+    </div>
 
     <script src="assets/script/script.js"></script>
 </body>
