@@ -39,7 +39,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--main-color);
+    background: var(--gradient-1);
 }
 
 .header {
@@ -59,25 +59,13 @@ html::-webkit-scrollbar-thumb {
     border-bottom: 1px solid rgba(0, 163, 255, 0.1);
 }
 
-.logo {
-    font-size: 3rem;
-    color: var(--main-color);
-    font-weight: 800;
-    cursor: pointer;
-    transition: .5s ease;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
 .navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
-    transition: .3s ease;
     border-bottom: 3px solid transparent;
+    transition: all 0.5s ease;
 }
 
 .navbar a:hover,
