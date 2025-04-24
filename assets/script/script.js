@@ -7,17 +7,17 @@ let Navlinks = document.querySelectorAll('header nav a');
 window.onscroll = () => {
     Section.forEach(sec => {
         let top = window.scrollY;
-        let offset = sec.offsetTop;
+        let offset = sec.offsetTop - 150; // Add offset to account for header
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
         
-        if(top >= offset && top < offset+height) {
+        if(top >= offset && top < offset + height) {
             Navlinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ' ]').classList.add('active');
-            })
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            });
         }
-    })
+    });
 }
 
 menuIcon.onclick = () => {
@@ -29,7 +29,21 @@ menuIcon.onclick = () => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        
+        // Remove active class from all links
+        Navlinks.forEach(links => {
+            links.classList.remove('active');
+        });
+        
+        // Add active class to clicked link
+        this.classList.add('active');
+        
+        // Get the target section
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        // Scroll to the section
+        targetSection.scrollIntoView({
             behavior: 'smooth'
         });
         
