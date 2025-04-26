@@ -137,3 +137,6 @@ revealElements.forEach((element) => {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
+// Updates the year of copyright in footer
+document.getElementById("current-year").textContent = new Date().getFullYear();

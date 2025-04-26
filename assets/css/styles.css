@@ -318,6 +318,7 @@ section {
 
 .social-links {
   display: flex;
+
   gap: 2rem;
 }
 
@@ -806,11 +807,9 @@ section {
   margin-bottom: 3rem;
 }
 
-.social-links {
-  display: flex;
+.social-col {
   flex-direction: column;
   text-align: center;
-  gap: 2rem;
 }
 
 .social-links p {
