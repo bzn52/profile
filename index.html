@@ -342,39 +342,63 @@
 
     <section class="call" id="call">
       <h2 class="heading">Contact <span>Me</span></h2>
-      <form
-        action="https://formsubmit.co/bizenofficial7@gmail.com"
-        method="POST"
-        class="contact-form"
-      >
-        <input type="text" name="_honey" style="display: none" />
-        <input type="hidden" name="_captcha" value="false" />
+      <div class="half">
+      <div class="left">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-envelope"></i> bizenofficial7@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +977 9861885157</p>
+        </div>
+        <div class="social-links">
+          <h3>Follow Me</h3>
+          <p>
+            <a href="https://www.instagram.com/meoww.zen" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://github.com/bzn52" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/bijenshresthaa" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="right">
+        <form
+          action="https://formsubmit.co/bizenofficial7@gmail.com"
+          method="POST"
+          class="contact-form"
+        >
+          <input type="text" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
 
-        <div class="input-box">
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input type="text" name="subject" placeholder="Subject" required />
+          </div>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
             required
-          />
-        </div>
-        <div class="input-box">
-          <input type="text" name="subject" placeholder="Subject" required />
-        </div>
-        <textarea
-          name="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <button type="submit" class="btn">
-          Send Message <i class="fa-solid fa-paper-plane"></i>
-        </button>
-      </form>
+          ></textarea>
+          <button type="submit" class="btn">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
     </section>
-
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-text">
@@ -393,6 +417,7 @@
           </a>
         </div>
       </div>
+    </div>
     </footer>
 
     <div class="popup" id="thankYouPopup">
