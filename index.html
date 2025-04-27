@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <title>Portfolio - Bijen Shrestha</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="icon" href="assets/imgs/cup.svg" type="image/icon type" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="imgs/cup.svg" type="image/icon type" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -83,7 +83,7 @@
               Contact Me
               <i class="fa-solid fa-paper-plane"></i>
             </a>
-            <a href="assets/resume.pdf" class="secondary-btn" download>
+            <a href="resume.pdf" class="secondary-btn" download>
               Download CV
               <i class="fa-solid fa-download"></i>
             </a>
@@ -93,7 +93,7 @@
 
       <div class="home-img">
         <div class="img-box">
-          <img src="assets/imgs/pfp.jpg" alt="profile" />
+          <img src="imgs/pfp.jpg" alt="profile" />
           <div class="img-bg"></div>
         </div>
         <div class="tech-stack">
@@ -234,7 +234,7 @@
       <h2 class="heading">My <span>Projects</span></h2>
       <div class="project-container">
         <div class="project-box">
-          <img src="assets/imgs/pr1.PNG" alt="project" />
+          <img src="imgs/pr1.PNG" alt="project" />
           <div class="project-info">
             <h3>Snake Game</h3>
             <p>A simple snake game built with HTML, CSS, and JavaScript.</p>
@@ -250,7 +250,7 @@
         </div>
 
         <div class="project-box">
-          <img src="assets/imgs/pr2.PNG" alt="project" />
+          <img src="imgs/pr2.PNG" alt="project" />
           <div class="project-info">
             <h3>Weather Site</h3>
             <p>
@@ -269,7 +269,7 @@
         </div>
 
         <div class="project-box">
-          <img src="assets/imgs/pr3.png" alt="project" />
+          <img src="imgs/pr3.png" alt="project" />
           <div class="project-info">
             <h3>Simple to-do list</h3>
             <p>A simple to-do list app built using vanilla JavaScript.</p>
@@ -285,7 +285,7 @@
         </div>
 
         <div class="project-box">
-          <img src="assets/imgs/pr4.png" alt="project" />
+          <img src="imgs/pr4.png" alt="project" />
           <div class="project-info">
             <h3>Expense tracker</h3>
             <p>A expense tracker app built using React js.</p>
@@ -301,7 +301,7 @@
         </div>
 
         <div class="project-box">
-          <img src="assets/imgs/pr5.png" alt="project" />
+          <img src="imgs/pr5.png" alt="project" />
           <div class="project-info">
             <h3>Rock Paper Scissors</h3>
             <p>A rock paper scissors game made for learning dom.</p>
@@ -317,7 +317,7 @@
         </div>
 
         <div class="project-box">
-          <img src="assets/imgs/pr6.png" alt="project" />
+          <img src="imgs/pr6.png" alt="project" />
           <div class="project-info">
             <h3>Live character counter</h3>
             <p>
@@ -342,68 +342,47 @@
 
     <section class="call" id="call">
       <h2 class="heading">Contact <span>Me</span></h2>
-      <div class="half">
-      <div class="left">
-        <div class="contact-info">
-          <h3>Get in Touch</h3>
-          <p><i class="fas fa-envelope"></i> bizenofficial7@gmail.com</p>
-          <p><i class="fas fa-phone"></i> +977 9861885157</p>
-        </div>
-        <div class="social-links social-col">
-          <h3>Follow Me</h3>
-          <p>
-            <a href="https://www.instagram.com/meoww.zen" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://github.com/bzn52" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/bijenshresthaa" target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </p>
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="right">
-        <form
-          action="https://formsubmit.co/bizenofficial7@gmail.com"
-          method="POST"
-          class="contact-form"
-        >
-          <input type="text" name="_honey" style="display: none" />
-          <input type="hidden" name="_captcha" value="false" />
 
-          <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-          </div>
-          <div class="input-box">
-            <input type="text" name="subject" placeholder="Subject" required />
-          </div>
-          <textarea
-            name="message"
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
+      <form
+        action="https://formsubmit.co/bizenofficial7@gmail.com"
+        method="POST"
+        class="contact-form"
+      >
+        <input type="text" name="_honey" style="display: none" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
             required
-          ></textarea>
-          <button type="submit" class="btn">
-            Send Message <i class="fa-solid fa-paper-plane"></i>
-          </button>
-        </form>
-      </div>
+          />
+        </div>
+        <div class="input-box">
+          <input type="text" name="subject" placeholder="Subject" required />
+        </div>
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit" class="btn">
+          Send Message <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
     </section>
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-text">
           <p>Bijen Shrestha</p>
-          <p>Copyright &copy; <span id="current-year">0</span> | All Rights Reserved</p>
+          <p>
+            Copyright &copy; <span id="current-year">0</span> | All Rights
+            Reserved
+          </p>
         </div>
         <div class="footer-links">
           <a href="https://www.linkedin.com/in/bijenshresthaa" target="_blank">
@@ -417,7 +396,6 @@
           </a>
         </div>
       </div>
-    </div>
     </footer>
 
     <div class="popup" id="thankYouPopup">
@@ -436,6 +414,6 @@
       </div>
     </div>
 
-    <script src="assets/script/script.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
