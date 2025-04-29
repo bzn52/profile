@@ -24,410 +24,427 @@
     />
   </head>
   <body>
-    <header class="header">
-      <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <!-- Preloader -->
+    <div id="loader">
+      <h1 class="heading"><span>Welcome</span></h1>
+    </div>
 
-      <nav class="navbar" id="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#prs">Projects</a>
-        <a href="#call">Contact</a>
-      </nav>
-    </header>
+    <!-- Main Content -->
+    <div id="content">
+      <header class="header">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-    <section id="home" class="home">
-      <div class="home-bg"></div>
-      <div class="home-content">
-        <div class="text-animate">
-          <h3 class="subtitle">Hello, I'm</h3>
-          <h1 class="title">Bijen Shrestha</h1>
-          <div class="profession">
-            <span class="profession-name">Web Developer</span>
+        <nav class="navbar" id="navbar">
+          <a href="#home" class="active">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#prs">Projects</a>
+          <a href="#call">Contact</a>
+        </nav>
+      </header>
+
+      <section id="home" class="home">
+        <div class="home-bg"></div>
+        <div class="home-content">
+          <div class="text-animate">
+            <h3 class="subtitle">Hello, I'm</h3>
+            <h1 class="title">Bijen Shrestha</h1>
+            <div class="profession">
+              <span class="profession-name">Web Developer</span>
+            </div>
+          </div>
+
+          <p class="description">
+            I am a passionate web developer who loves creating beautiful and
+            functional websites. With my skills in HTML, CSS, JavaScript, and
+            React, I can bring your ideas to life on the web. Let's work
+            together to create something amazing!
+          </p>
+
+          <div class="cta-container">
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/bijenshresthaa"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/bzn52"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/meoww.zen"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+
+            <div class="action-btns">
+              <a href="#call" class="primary-btn">
+                Contact Me
+                <i class="fa-solid fa-paper-plane"></i>
+              </a>
+              <a href="resume.pdf" class="secondary-btn" download>
+                Download CV
+                <i class="fa-solid fa-download"></i>
+              </a>
+            </div>
           </div>
         </div>
 
-        <p class="description">
-          I am a passionate web developer who loves creating beautiful and
-          functional websites. With my skills in HTML, CSS, JavaScript, and
-          React, I can bring your ideas to life on the web. Let's work together
-          to create something amazing!
-        </p>
+        <div class="home-img">
+          <div class="img-box">
+            <img src="imgs/pfp.jpg" alt="profile" />
+            <div class="img-bg"></div>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-item"><i class="fa-brands fa-html5"></i></span>
+            <span class="tech-item"><i class="fa-brands fa-css3-alt"></i></span>
+            <span class="tech-item"><i class="fa-brands fa-js"></i></span>
+            <span class="tech-item"><i class="fa-brands fa-react"></i></span>
+          </div>
+        </div>
+      </section>
 
-        <div class="cta-container">
-          <div class="social-links">
+      <section id="skills" class="skills-section">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3>Frontend</h3>
+            <ul>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/html.svg" alt="HTML" />
+                  <div class="icon-label">HTML</div>
+                </div>
+              </li>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/css.svg" alt="CSS" />
+                  <div class="icon-label">CSS</div>
+                </div>
+              </li>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/tailwind.svg" alt="Tailwindcss" />
+                  <div class="icon-label">Tailwind</div>
+                </div>
+              </li>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/js.svg" alt="JavaScript" />
+                  <div class="icon-label">JavaScript</div>
+                </div>
+              </li>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/react.svg" alt="React" />
+                  <div class="icon-label">React</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-box">
+            <h3>Backend</h3>
+            <ul>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/php.svg" alt="Php" />
+                  <div class="icon-label">PHP</div>
+                </div>
+              </li>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/node.svg" alt="Node.js" />
+                  <div class="icon-label">Node.js</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-box">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/java.svg" alt="Java" />
+                  <div class="icon-label">Java</div>
+                </div>
+              </li>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/python.svg" alt="Python" />
+                  <div class="icon-label">Python</div>
+                </div>
+              </li>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/c.svg" alt="C++" />
+                  <div class="icon-label">C++</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-box">
+            <h3>Design</h3>
+            <ul>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/framer.svg" alt="Framer" />
+                  <div class="icon-label">Framer</div>
+                </div>
+              </li>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/figma.svg" alt="Figma" />
+                  <div class="icon-label">Figma</div>
+                </div>
+              </li>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/canva.svg" alt="Canva" />
+                  <div class="icon-label">Canva</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-box">
+            <h3>Other Tools</h3>
+            <ul>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/github.svg" alt="GitHub" />
+                  <div class="icon-label">GitHub</div>
+                </div>
+              </li>
+              <li class="skill-icon">
+                <div class="icon-wrapper">
+                  <img src="icons/git.svg" alt="Git" />
+                  <div class="icon-label">Git</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="prs" id="prs">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="project-container">
+          <div class="project-box">
+            <img src="imgs/pr1.PNG" alt="project" />
+            <div class="project-info">
+              <h3>Snake Game</h3>
+              <p>A simple snake game built with HTML, CSS, and JavaScript.</p>
+              <div class="project-links">
+                <a href="https://github.com/bzn52/Snake-game" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://bzn52.github.io/Snake-game/" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <img src="imgs/pr2.PNG" alt="project" />
+            <div class="project-info">
+              <h3>Weather Site</h3>
+              <p>
+                A weather site built to learn API. It uses OpenWeatherMap API to
+                fetch weather data.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/bzn52/weather-site" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://bzn52.github.io/weather-site/" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <img src="imgs/pr3.png" alt="project" />
+            <div class="project-info">
+              <h3>Simple to-do list</h3>
+              <p>A simple to-do list app built using vanilla JavaScript.</p>
+              <div class="project-links">
+                <a href="https://github.com/bzn52/simple-todo" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://bzn52.github.io/simple-todo/" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="pr-4" class="project-box hide">
+            <img src="imgs/pr4.png" alt="project" />
+            <div class="project-info">
+              <h3>Expense tracker</h3>
+              <p>An expense tracker app built using React js.</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/bzn52/expense-tracker"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://bzn52.github.io/expense-tracker/"
+                  target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="pr-5" class="project-box hide">
+            <img src="imgs/pr5.png" alt="project" />
+            <div class="project-info">
+              <h3>Rock Paper Scissors</h3>
+              <p>A rock paper scissors game made for learning dom.</p>
+              <div class="project-links">
+                <a href="https://github.com/bzn52/rock-paper" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://bzn52.github.io/rock-paper/" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="pr-6" class="project-box hide">
+            <img src="imgs/pr6.png" alt="project" />
+            <div class="project-info">
+              <h3>Live character counter</h3>
+              <p>
+                A live character counter with progressbar which changes color
+                according to input length of text entered.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/bzn52/char-counter" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://bzn52.github.io/char-counter/" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="pr-7" class="project-box hide">
+            <img src="imgs/pr7.png" alt="project" />
+            <div class="project-info">
+              <h3>Sudoku solver</h3>
+              <p>A sudoku solver with user input on grid.</p>
+              <div class="project-links">
+                <a href="https://github.com/bzn52/sudoku-solver" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://bzn52.github.io/sudoku-solver/" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <div class="pro-button" id="pr-button">
+          <button class="btn" onclick="showProjects()">
+            View All Projects
+          </button>
+        </div>
+      </section>
+
+      <section class="call" id="call">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form
+          action="https://formsubmit.co/bizenofficial7@gmail.com"
+          method="POST"
+          class="contact-form"
+        >
+          <input type="text" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input type="text" name="subject" placeholder="Subject" required />
+          </div>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>Bijen Shrestha</p>
+            <p>
+              Copyright &copy; <span id="current-year">0</span> | All Rights
+              Reserved
+            </p>
+          </div>
+          <div class="footer-links">
             <a
               href="https://www.linkedin.com/in/bijenshresthaa"
               target="_blank"
-              class="social-btn"
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a
-              href="https://github.com/bzn52"
-              target="_blank"
-              class="social-btn"
-            >
+            <a href="https://github.com/bzn52" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a
-              href="https://www.instagram.com/meoww.zen"
-              target="_blank"
-              class="social-btn"
-            >
+            <a href="https://www.instagram.com/meoww.zen" target="_blank">
               <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
+        </div>
+      </footer>
 
-          <div class="action-btns">
-            <a href="#call" class="primary-btn">
-              Contact Me
-              <i class="fa-solid fa-paper-plane"></i>
-            </a>
-            <a href="resume.pdf" class="secondary-btn" download>
-              Download CV
-              <i class="fa-solid fa-download"></i>
-            </a>
-          </div>
+      <div class="popup" id="thankYouPopup">
+        <div class="popup-content">
+          <i class="fas fa-check-circle"></i>
+          <h2>Thank You!</h2>
+          <p>Your message has been sent successfully.</p>
+          <button class="btn popup-close">Close</button>
         </div>
       </div>
 
-      <div class="home-img">
-        <div class="img-box">
-          <img src="imgs/pfp.jpg" alt="profile" />
-          <div class="img-bg"></div>
+      <div class="loading-popup" id="loadingPopup">
+        <div class="loading-content">
+          <div class="loading-spinner"></div>
+          <p>Sending message...</p>
         </div>
-        <div class="tech-stack">
-          <span class="tech-item"><i class="fa-brands fa-html5"></i></span>
-          <span class="tech-item"><i class="fa-brands fa-css3-alt"></i></span>
-          <span class="tech-item"><i class="fa-brands fa-js"></i></span>
-          <span class="tech-item"><i class="fa-brands fa-react"></i></span>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="skills-section">
-      <h2 class="heading">My <span>Skills</span></h2>
-      <div class="skills-grid">
-        <div class="skill-box">
-          <h3>Frontend</h3>
-          <ul>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/html.svg" alt="HTML" />
-                <div class="icon-label">HTML</div>
-              </div>
-            </li>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/css.svg" alt="CSS" />
-                <div class="icon-label">CSS</div>
-              </div>
-            </li>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/tailwind.svg" alt="Tailwindcss" />
-                <div class="icon-label">Tailwind</div>
-              </div>
-            </li>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/js.svg" alt="JavaScript" />
-                <div class="icon-label">JavaScript</div>
-              </div>
-            </li>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/react.svg" alt="React" />
-                <div class="icon-label">React</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-box">
-          <h3>Backend</h3>
-          <ul>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/php.svg" alt="Php" />
-                <div class="icon-label">PHP</div>
-              </div>
-            </li>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/node.svg" alt="Node.js" />
-                <div class="icon-label">Node.js</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-box">
-          <h3>Programming Languages</h3>
-          <ul>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/java.svg" alt="Java" />
-                <div class="icon-label">Java</div>
-              </div>
-            </li>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/python.svg" alt="Python" />
-                <div class="icon-label">Python</div>
-              </div>
-            </li>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/c.svg" alt="C++" />
-                <div class="icon-label">C++</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-box">
-          <h3>Design</h3>
-          <ul>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/framer.svg" alt="Framer" />
-                <div class="icon-label">Framer</div>
-              </div>
-            </li>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/figma.svg" alt="Figma" />
-                <div class="icon-label">Figma</div>
-              </div>
-            </li>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/canva.svg" alt="Canva" />
-                <div class="icon-label">Canva</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-box">
-          <h3>Other Tools</h3>
-          <ul>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/github.svg" alt="GitHub" />
-                <div class="icon-label">GitHub</div>
-              </div>
-            </li>
-            <li class="skill-icon">
-              <div class="icon-wrapper">
-                <img src="icons/git.svg" alt="Git" />
-                <div class="icon-label">Git</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="prs" id="prs">
-      <h2 class="heading">My <span>Projects</span></h2>
-      <div class="project-container">
-        <div class="project-box">
-          <img src="imgs/pr1.PNG" alt="project" />
-          <div class="project-info">
-            <h3>Snake Game</h3>
-            <p>A simple snake game built with HTML, CSS, and JavaScript.</p>
-            <div class="project-links">
-              <a href="https://github.com/bzn52/Snake-game" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://bzn52.github.io/Snake-game/" target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-box">
-          <img src="imgs/pr2.PNG" alt="project" />
-          <div class="project-info">
-            <h3>Weather Site</h3>
-            <p>
-              A weather site built to learn API. It uses OpenWeatherMap API to
-              fetch weather data.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/bzn52/weather-site" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://bzn52.github.io/weather-site/" target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-box">
-          <img src="imgs/pr3.png" alt="project" />
-          <div class="project-info">
-            <h3>Simple to-do list</h3>
-            <p>A simple to-do list app built using vanilla JavaScript.</p>
-            <div class="project-links">
-              <a href="https://github.com/bzn52/simple-todo" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://bzn52.github.io/simple-todo/" target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div id="pr-4" class="project-box hide">
-          <img src="imgs/pr4.png" alt="project" />
-          <div class="project-info">
-            <h3>Expense tracker</h3>
-            <p>An expense tracker app built using React js.</p>
-            <div class="project-links">
-              <a href="https://github.com/bzn52/expense-tracker" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://bzn52.github.io/expense-tracker/" target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div id="pr-5" class="project-box hide">
-          <img src="imgs/pr5.png" alt="project" />
-          <div class="project-info">
-            <h3>Rock Paper Scissors</h3>
-            <p>A rock paper scissors game made for learning dom.</p>
-            <div class="project-links">
-              <a href="https://github.com/bzn52/rock-paper" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://bzn52.github.io/rock-paper/" target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div id="pr-6" class="project-box hide">
-          <img src="imgs/pr6.png" alt="project" />
-          <div class="project-info">
-            <h3>Live character counter</h3>
-            <p>
-              A live character counter with progressbar which changes color
-              according to input length of text entered.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/bzn52/char-counter" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://bzn52.github.io/char-counter/" target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div id="pr-7" class="project-box hide">
-          <img src="imgs/pr7.png" alt="project" />
-          <div class="project-info">
-            <h3>Sudoku solver</h3>
-            <p>A sudoku solver with user input on grid.</p>
-            <div class="project-links">
-              <a href="https://github.com/bzn52/sudoku-solver" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://bzn52.github.io/sudoku-solver/" target="_blank"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-      </div>
-      <div class="pro-button" id="pr-button">
-        <button class="btn" onclick="showProjects()">View All Projects</button>
-      </div>
-    </section>
-
-    <section class="call" id="call">
-      <h2 class="heading">Contact <span>Me</span></h2>
-
-      <form
-        action="https://formsubmit.co/bizenofficial7@gmail.com"
-        method="POST"
-        class="contact-form"
-      >
-        <input type="text" name="_honey" style="display: none" />
-        <input type="hidden" name="_captcha" value="false" />
-
-        <div class="input-box">
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-        </div>
-        <div class="input-box">
-          <input type="text" name="subject" placeholder="Subject" required />
-        </div>
-        <textarea
-          name="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <button type="submit" class="btn">
-          Send Message <i class="fa-solid fa-paper-plane"></i>
-        </button>
-      </form>
-    </section>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-text">
-          <p>Bijen Shrestha</p>
-          <p>
-            Copyright &copy; <span id="current-year">0</span> | All Rights
-            Reserved
-          </p>
-        </div>
-        <div class="footer-links">
-          <a href="https://www.linkedin.com/in/bijenshresthaa" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/bzn52" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/meoww.zen" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
-
-    <div class="popup" id="thankYouPopup">
-      <div class="popup-content">
-        <i class="fas fa-check-circle"></i>
-        <h2>Thank You!</h2>
-        <p>Your message has been sent successfully.</p>
-        <button class="btn popup-close">Close</button>
-      </div>
-    </div>
-
-    <div class="loading-popup" id="loadingPopup">
-      <div class="loading-content">
-        <div class="loading-spinner"></div>
-        <p>Sending message...</p>
       </div>
     </div>
 

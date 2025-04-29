@@ -13,6 +13,18 @@ const showMoreBtn = document.getElementById("pr-button");
 const projectElements = ["pr-4", "pr-5", "pr-6", "pr-7"].map((id) =>
   document.getElementById(id)
 );
+const preloader = document.getElementById("loader");
+const content = document.getElementById("content");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    preloader.classList.add("fade");
+    setTimeout(() => {
+      preloader.style.display = "none";
+      content.classList.add("visible");
+    }, 1000);
+  }, 1000);
+});
 
 const removeClassFromElements = (elements, className) => {
   elements.forEach((el) => el.classList.remove(className));

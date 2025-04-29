@@ -41,6 +41,39 @@ html::-webkit-scrollbar-thumb {
   background: var(--gradient-1);
 }
 
+/* preloader */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+#loader.fade {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+
+#content.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 .header {
   position: fixed;
   top: 0;
