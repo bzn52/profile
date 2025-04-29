@@ -723,7 +723,9 @@ section {
   flex-direction: column;
   text-align: center;
   padding: 0 4rem;
+  opacity: 1;
   transform: translateY(100%);
+  transition: opacity 0.5 ease-in-out;
   transition: 0.5s ease;
 }
 
@@ -757,9 +759,13 @@ section {
   color: var(--second-bg-color);
 }
 
-.pro-button {
-  /* chnage display to flex fi needed a button */
+.hide {
   display: none;
+  opacity: 0;
+}
+
+.pro-button {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
