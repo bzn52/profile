@@ -56,11 +56,16 @@ html::-webkit-scrollbar-thumb {
   z-index: 1000;
   opacity: 1;
   transition: opacity 1s ease;
+  flex-direction: column;
 }
 
 #loader.fade {
   opacity: 0;
   pointer-events: none;
+}
+
+#loader p {
+  font-size: 1rem;
 }
 
 #content {

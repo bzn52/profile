@@ -10,9 +10,15 @@ const submitBtn = contactForm.querySelector(".btn");
 const revealElements = document.querySelectorAll(".skill-box, .project-box");
 const currentYear = document.getElementById("current-year");
 const showMoreBtn = document.getElementById("pr-button");
-const projectElements = ["pr-4", "pr-5", "pr-6", "pr-7", "pr-8"].map((id) =>
-  document.getElementById(id)
-);
+const projectElements = [
+  "pr-4",
+  "pr-5",
+  "pr-6",
+  "pr-7",
+  "pr-8",
+  "pr-9",
+  "pr-10",
+].map((id) => document.getElementById(id));
 const preloader = document.getElementById("loader");
 const content = document.getElementById("content");
 
