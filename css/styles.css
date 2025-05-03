@@ -989,10 +989,6 @@ section {
     grid-template-columns: 1fr;
   }
 
-  .project-box {
-    height: 200px;
-  }
-
   section {
     padding: 8rem 4% 5rem;
   }
