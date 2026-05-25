@@ -1,487 +1,362 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <title>Portfolio - Bijen Shrestha</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="imgs/cup.svg" type="image/icon type" />
+    <title>Portfolio - Zen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="imgs/cup.svg" type="image/icon type" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
       rel="stylesheet"
     />
-
-    <!--    Font Awesome    -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Preloader -->
-    <div id="loader">
-      <h1 class="heading"><span>Welcome...</span></h1>
-    </div>
+    <nav>
+      <canvas id="header-canvas"></canvas>
+      <a href="" class="nav-logo">MEOW<span>X</span>ZEN</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">History</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
 
-    <!-- Main Content -->
-    <div id="content">
-      <header class="header">
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <section id="hero">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="hero-badge">
+            BCA Student // Full-Stack Code & Video Craft
+          </div>
+          <h1 class="hero-title">Bizen<br /><span>Shrestha</span></h1>
+          <p class="hero-bio">
+            I build clean websites, design sleek layout structures, and direct
+            post-production video editing. Focused on sharp aesthetic precision
+            and hitting deadlines every time.
+          </p>
+          <div class="hero-actions">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=meowxzen@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              Say Hello
+            </a>
+          </div>
+        </div>
 
-        <nav class="navbar" id="navbar">
-          <a href="#home" class="active">Home</a>
-          <a href="#skills">Skills</a>
-          <a href="#prs">Projects</a>
-          <a href="#call">Contact</a>
-        </nav>
-      </header>
-
-      <section id="home" class="home">
-        <div class="home-bg"></div>
-        <div class="home-content">
-          <div class="text-animate">
-            <h3 class="subtitle">Hello, I'm</h3>
-            <h1 class="title">Bijen Shrestha</h1>
-            <div class="profession">
-              <span class="profession-name">Web Developer</span>
+        <div class="hero-right">
+          <div class="pfp-container">
+            <div class="pfp-card">
+              <img src="pfp.jpg" alt="Bizen Shrestha" class="pfp-img" />
+              <div class="card-glow-layer"></div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="ambient-glow"></div>
+    </section>
 
-          <p class="description">
-            I am a passionate web developer who loves creating beautiful and
-            functional websites. With my skills in HTML, CSS, JavaScript, and
-            React, I can bring your ideas to life on the web. Let's work
-            together to create something amazing!
+    <section id="about">
+      <div class="section-label">The Mindset</div>
+
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <h2 class="glowing-heading">
+            Clean Logic.<br /><span>Flawless Pacing.</span>
+          </h2>
+          <p class="about-lead">
+            I'm currently studying for my
+            <strong
+              >Bachelor of Computer Applications (BCA) at Edmark Academy</strong
+            >. Over the last <strong>3+ years</strong>, I've spent my time
+            writing clean code, assembling heavy timelines, and scouting hidden
+            horizons.
+          </p>
+          <p>
+            My approach is simple: keep files organized, stay punctual, and make
+            sure the final output looks spectacular. Whether it's optimization
+            of server logic or editing frames down to the exact millisecond, I
+            enjoy taking an idea, framing the timeline, and shipping it without
+            the corporate clutter.
+          </p>
+          <p>
+            Constantly shifting states between local database servers, dynamic
+            rendering layers, and raw video timelines. I prioritize bulletproof
+            logic containment, smooth post-production pacing, and building clean
+            layouts that scale perfectly.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card premium-card">
+            <div class="stat-num">BCA</div>
+            <div class="stat-label">Tech & Logic Track</div>
+            <div class="card-glow-layer"></div>
+          </div>
+
+          <div class="stat-card premium-card">
+            <div class="stat-num">3+ Yrs</div>
+            <div class="stat-label">Building & Cutting</div>
+            <div class="card-glow-layer"></div>
+          </div>
+
+          <div class="stat-card premium-card">
+            <div class="stat-num">Full Stack</div>
+            <div class="stat-label">Web & Post-Production Sync</div>
+            <div class="card-glow-layer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-label">The Arsenal</div>
+
+      <div class="skills-container reveal">
+        <div class="skills-block">
+          <div class="block-header">
+            <span class="block-icon">&lt;/&gt;</span>
+            <h3>Development Engines</h3>
+          </div>
+          <p class="block-desc">
+            Architecturalizing clean database modules, optimized runtime
+            environments, and lightning-fast layouts.
           </p>
 
-          <div class="cta-container">
-            <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/bijenshresthaa"
-                target="_blank"
-                class="social-btn"
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">HTML5 & CSS3</span>
+              <span class="skill-percentage">Core Layouts</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript (ES6+)</span>
+              <span class="skill-percentage">Async Logic</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React.js</span>
+              <span class="skill-percentage">Component Trees</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Node.js / Express</span>
+              <span class="skill-percentage">Server Pipelines</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB & SQL</span>
+              <span class="skill-percentage">Data Security</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git & GitHub</span>
+              <span class="skill-percentage">Version Flow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-block">
+          <div class="block-header">
+            <span class="block-icon">■</span>
+            <h3>Creative Engine</h3>
+          </div>
+          <p class="block-desc">
+            Manipulating frame-accurate post-production pacing, dynamic asset
+            layouts, and high-retention content flow.
+          </p>
+
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-name">CapCut</span>
+              <span class="skill-percentage">Mobile Post-Prod</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Alight Motion</span>
+              <span class="skill-percentage">Motion Mechanics</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">PicsArt</span>
+              <span class="skill-percentage">Asset Manipulation</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Canva</span>
+              <span class="skill-percentage">Layout Architecture</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">UI/UX Layouts</span>
+              <span class="skill-percentage">Figma Structuring</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Pacing & Continuity</span>
+              <span class="skill-percentage">Timeline Flow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-label">The Chronology</div>
+
+      <div class="timeline-v2 reveal">
+        <!-- Block 1: Education -->
+        <div class="history-row">
+          <div class="history-time-col">
+            <div class="time-capsule">2024 — PRES</div>
+          </div>
+          <div class="history-content-col">
+            <div class="premium-card aesthetic-card">
+              <div class="corner-accent"></div>
+              <span class="meta-label text-neon">Academic Track</span>
+              <h3 class="card-title">
+                Bachelor of Computer Applications (BCA)
+              </h3>
+              <h4 class="card-subtitle">Edmark Academy // Kathmandu</h4>
+              <p class="card-body-text">
+                Deep-diving into fundamental computer science architectures,
+                core database systems, structured algorithms, and data logic
+                patterns. Balancing strict academic software engineering
+                concepts with active front-end system builds.
+              </p>
+              <div class="card-glow-layer"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 2: Work -->
+        <div class="history-row">
+          <div class="history-time-col">
+            <div class="time-capsule">2023 — PRES</div>
+          </div>
+          <div class="history-content-col">
+            <div class="premium-card aesthetic-card">
+              <div class="corner-accent"></div>
+              <span class="meta-label text-blue">Freelance Execution</span>
+              <h3 class="card-title">Full-Stack Developer & Content Editor</h3>
+              <h4 class="card-subtitle">Independent Remote Projects</h4>
+              <p class="card-body-text">
+                Architecting tailored responsive layout interfaces for local and
+                digital assets. Simultaneously handling creative post-production
+                lines—building quick-turnaround promotional edits, optimizing
+                high-retention pacing on CapCut, and constructing frame motion
+                via Alight Motion.
+              </p>
+              <div class="card-glow-layer"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 3: Genesis -->
+        <div class="history-row">
+          <div class="history-time-col">
+            <div class="time-capsule">2022 — 2023</div>
+          </div>
+          <div class="history-content-col">
+            <div class="premium-card aesthetic-card">
+              <div class="corner-accent"></div>
+              <span class="meta-label text-purple">The Genesis</span>
+              <h3 class="card-title">Self-Taught Logic & Graphic Assets</h3>
+              <h4 class="card-subtitle">Foundational Growth Period</h4>
+              <p class="card-body-text">
+                Began writing functional script loops, understanding document
+                structures, and studying vector grid aesthetics. Mastered layer
+                manipulation, typographic asset scaling, and structural
+                compositions using Canva and PicsArt.
+              </p>
+              <div class="card-glow-layer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ULTRA-AESTHETIC NETWORK DOCK -->
+    <section id="contact">
+      <div class="section-label">The Gateway</div>
+
+      <div class="contact-aesthetic-wrap reveal">
+        <!-- Minimal Narrative Focus -->
+        <div class="gateway-header">
+          <h2 class="glowing-heading">
+            Let's build<br /><span>something real.</span>
+          </h2>
+          <p class="gateway-sub">
+            Available for digital framework builds and post-production timeline
+            direction.
+          </p>
+        </div>
+
+        <!-- Sleek Geometric Media Dock -->
+        <div class="premium-card cyber-media-dock">
+          <!-- TikTok Node -->
+          <a
+            href="https://www.tiktok.com/@meowxzen"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="dock-node brand-tiktok"
+          >
+            <span class="node-icon">🎵</span>
+            <div class="node-meta">
+              <span class="node-label">TikTok</span>
+              <span class="node-handle">@meowxzen</span>
+            </div>
+            <span class="node-indicator"></span>
+          </a>
+
+          <div class="dock-divider"></div>
+
+          <!-- GitHub Node -->
+          <a
+            href="https://github.com/bzn52"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="dock-node brand-github"
+          >
+            <span class="node-icon">📂</span>
+            <div class="node-meta">
+              <span class="node-label">GitHub</span>
+              <span class="node-handle">bzn52</span>
+            </div>
+            <span class="node-indicator"></span>
+          </a>
+
+          <div class="dock-divider"></div>
+
+          <!-- Click-to-Copy Gmail Node -->
+          <div
+            class="dock-node brand-email"
+            id="copy-email-btn"
+            title="Click to copy email address"
+          >
+            <span class="node-icon">✉</span>
+            <div class="node-meta">
+              <span class="node-label">Direct Mail</span>
+              <span class="node-handle" id="user-email"
+                >meowxzen@gmail.com</span
               >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a
-                href="https://github.com/bzn52"
-                target="_blank"
-                class="social-btn"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/meoww.zen"
-                target="_blank"
-                class="social-btn"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
             </div>
-
-            <div class="action-btns">
-              <a href="#call" class="primary-btn">
-                Contact Me
-                <i class="fa-solid fa-paper-plane"></i>
-              </a>
-              <a href="resume.pdf" class="secondary-btn" download>
-                Download CV
-                <i class="fa-solid fa-download"></i>
-              </a>
-            </div>
+            <span class="copy-status-bubble" id="copy-bubble">Copy</span>
           </div>
+
+          <div class="card-glow-layer"></div>
         </div>
+      </div>
 
-        <div class="home-img">
-          <div class="img-box">
-            <img src="imgs/pfp.jpg" alt="profile" />
-            <div class="img-bg"></div>
-          </div>
-          <div class="tech-stack">
-            <span class="tech-item"><i class="fa-brands fa-html5"></i></span>
-            <span class="tech-item"><i class="fa-brands fa-css3-alt"></i></span>
-            <span class="tech-item"><i class="fa-brands fa-js"></i></span>
-            <span class="tech-item"><i class="fa-brands fa-react"></i></span>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="skills-section">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-grid">
-          <div class="skill-box">
-            <h3>Frontend</h3>
-            <ul>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/html.svg" alt="HTML" />
-                  <div class="icon-label">HTML</div>
-                </div>
-              </li>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/css.svg" alt="CSS" />
-                  <div class="icon-label">CSS</div>
-                </div>
-              </li>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/tailwind.svg" alt="Tailwindcss" />
-                  <div class="icon-label">Tailwind</div>
-                </div>
-              </li>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/js.svg" alt="JavaScript" />
-                  <div class="icon-label">JavaScript</div>
-                </div>
-              </li>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/react.svg" alt="React" />
-                  <div class="icon-label">React</div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="skill-box">
-            <h3>Backend</h3>
-            <ul>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/php.svg" alt="Php" />
-                  <div class="icon-label">PHP</div>
-                </div>
-              </li>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/node.svg" alt="Node.js" />
-                  <div class="icon-label">Node.js</div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="skill-box">
-            <h3>Programming Languages</h3>
-            <ul>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/java.svg" alt="Java" />
-                  <div class="icon-label">Java</div>
-                </div>
-              </li>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/python.svg" alt="Python" />
-                  <div class="icon-label">Python</div>
-                </div>
-              </li>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/c.svg" alt="C++" />
-                  <div class="icon-label">C++</div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="skill-box">
-            <h3>Design</h3>
-            <ul>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/framer.svg" alt="Framer" />
-                  <div class="icon-label">Framer</div>
-                </div>
-              </li>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/figma.svg" alt="Figma" />
-                  <div class="icon-label">Figma</div>
-                </div>
-              </li>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/canva.svg" alt="Canva" />
-                  <div class="icon-label">Canva</div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="skill-box">
-            <h3>Other Tools</h3>
-            <ul>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/github.svg" alt="GitHub" />
-                  <div class="icon-label">GitHub</div>
-                </div>
-              </li>
-              <li class="skill-icon">
-                <div class="icon-wrapper">
-                  <img src="icons/git.svg" alt="Git" />
-                  <div class="icon-label">Git</div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="prs" id="prs">
-        <h2 class="heading">My <span>Projects</span></h2>
-        <div class="project-container">
-          <!-- First -->
-          <div class="project-box">
-            <img src="imgs/pr1.png" alt="project" />
-            <div class="project-info">
-              <h3>Whack a mole</h3>
-              <div class="project-links">
-                <a href="https://github.com/bzn52/whack-a-mole" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://bzn52.github.io/whack-a-mole/" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second -->
-          <div class="project-box">
-            <img src="imgs/pr2.png" alt="project" />
-            <div class="project-info">
-              <h3>Black Jack</h3>
-              <div class="project-links">
-                <a href="https://github.com/bzn52/black-jack" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://bzn52.github.io/black-jack/" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Third -->
-          <div class="project-box">
-            <img src="imgs/pr3.png" alt="project" />
-            <div class="project-info">
-              <h3>Expense tracker</h3>
-              <div class="project-links">
-                <a
-                  href="https://github.com/bzn52/expense-tracker"
-                  target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a
-                  href="https://bzn52.github.io/expense-tracker/"
-                  target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- Hidden -->
-
-          <div id="pr-4" class="project-box hide">
-            <img src="imgs/pr4.png" alt="project" />
-            <div class="project-info">
-              <h3>Snake Game</h3>
-              <div class="project-links">
-                <a href="https://github.com/bzn52/Snake-game" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://bzn52.github.io/Snake-game/" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="pr-5" class="project-box hide">
-            <img src="imgs/pr5.png" alt="project" />
-            <div class="project-info">
-              <h3>Weather Site</h3>
-              <div class="project-links">
-                <a href="https://github.com/bzn52/weather-site" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://bzn52.github.io/weather-site/" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="pr-6" class="project-box hide">
-            <img src="imgs/pr6.png" alt="project" />
-            <div class="project-info">
-              <h3>Simple to-do list</h3>
-              <div class="project-links">
-                <a href="https://github.com/bzn52/simple-todo" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://bzn52.github.io/simple-todo/" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="pr-7" class="project-box hide">
-            <img src="imgs/pr7.png" alt="project" />
-            <div class="project-info">
-              <h3>Rock Paper Scissors</h3>
-              <div class="project-links">
-                <a href="https://github.com/bzn52/rock-paper" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://bzn52.github.io/rock-paper/" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="pr-8" class="project-box hide">
-            <img src="imgs/pr8.png" alt="project" />
-            <div class="project-info">
-              <h3>Live character counter</h3>
-              <div class="project-links">
-                <a href="https://github.com/bzn52/char-counter" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://bzn52.github.io/char-counter/" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="pr-9" class="project-box hide">
-            <img src="imgs/pr9.png" alt="project" />
-            <div class="project-info">
-              <h3>Sudoku solver</h3>
-              <div class="project-links">
-                <a href="https://github.com/bzn52/sudoku-solver" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://bzn52.github.io/sudoku-solver/" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="pr-10" class="project-box hide">
-            <img src="imgs/pr10.png" alt="project" />
-            <div class="project-info">
-              <h3>2048 Game</h3>
-              <div class="project-links">
-                <a href="https://github.com/bzn52/2048-game" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://bzn52.github.io/2048-game/" target="_blank"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- Add more here -->
-        </div>
-        <div class="pro-button" id="pr-button">
-          <button class="btn" onclick="showProjects()">View More</button>
-        </div>
-      </section>
-
-      <section class="call" id="call">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form
-          action="https://formsubmit.co/bizenofficial7@gmail.com"
-          method="POST"
-          class="contact-form"
-        >
-          <input type="text" name="_honey" style="display: none" />
-          <input type="hidden" name="_captcha" value="false" />
-
-          <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-          </div>
-          <div class="input-box">
-            <input type="text" name="subject" placeholder="Subject" required />
-          </div>
-          <textarea
-            name="message"
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button type="submit" class="btn">
-            Send Message <i class="fa-solid fa-paper-plane"></i>
-          </button>
-        </form>
-      </section>
-      <footer class="footer">
+      <!-- Minimalistic Footer System -->
+      <footer>
+        <div class="footer-separator"></div>
         <div class="footer-content">
-          <div class="footer-text">
-            <p>Bijen Shrestha</p>
-            <p>
-              Copyright &copy; <span id="current-year">0</span> | All Rights
-              Reserved
-            </p>
-          </div>
-          <div class="footer-links">
-            <a
-              href="https://www.linkedin.com/in/bijenshresthaa"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/bzn52" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/meoww.zen" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
+          <p class="footer-copy">
+            &copy; 2026 Bizen Shrestha. All Rights Reserved.
+          </p>
+          <p class="footer-tagline">
+            Architected with Logic // Driven by Rhythm
+          </p>
         </div>
       </footer>
+    </section>
 
-      <div class="popup" id="thankYouPopup">
-        <div class="popup-content">
-          <i class="fas fa-check-circle"></i>
-          <h2>Thank You!</h2>
-          <p>Your message has been sent successfully.</p>
-          <button class="btn popup-close">Close</button>
-        </div>
-      </div>
-
-      <div class="loading-popup" id="loadingPopup">
-        <div class="loading-content">
-          <div class="loading-spinner"></div>
-          <p>Sending message...</p>
-        </div>
-      </div>
-    </div>
-
-    <script src="script/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
