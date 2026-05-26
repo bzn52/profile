@@ -124,4 +124,24 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // 4. MOBILE HAMBURGER MENU INTERACTION CONTROLLER
+  const hamburger = document.getElementById("hamburger-menu");
+  const navLinks = document.getElementById("nav-links");
+  // FIX: Added the missing dot '.' to look for the class wrapper
+  const menuLinks = document.querySelectorAll(".nav-links a");
+
+  // Toggle active class on click
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+
+  // Automatically collapse the overlay menu when clicking any view link
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navLinks.classList.remove("active");
+    });
+  });
 });
